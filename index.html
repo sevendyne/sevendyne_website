@@ -245,6 +245,78 @@
             transform: translateY(-5px);
         }
         
+        /* NEW SERVICES SECTION */
+        #services {
+            padding: 80px 0;
+        }
+        
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #1a2a6c 0%, #2a5298 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .service-card h3 {
+            color: #1a2a6c;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-card p {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+        
+        .service-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #1a2a6c, #2a5298);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .service-btn:hover {
+            background: linear-gradient(to right, #2a5298, #4a6fa5);
+            box-shadow: 0 5px 15px rgba(26, 42, 108, 0.3);
+        }
+        
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -279,6 +351,16 @@
                 font-size: 1.2rem;
                 padding: 15px 25px;
             }
+            
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .service-card {
+                width: 100%;
+                max-width: 450px;
+            }
         }
     </style>
 </head>
@@ -292,6 +374,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -301,9 +384,44 @@
     <div class="container">
         <section class="hero">
             <div class="hero-content">
-              <h2>Sevendyne Consultancy & Solutions</h2>
-<p>Delivering expert solutions since 2016 across app development, tech-enabled staffing and payroll, office infrastructure, and team building—with a strong foundation in IT and beyond.</p>
+                <h2>Sevendyne Consultancy & Solutions</h2>
+                <p>Delivering expert solutions since 2016 across app development, tech-enabled staffing and payroll, office infrastructure, and team building—with a strong foundation in IT and beyond.</p>
                 <a href="#contact" class="highlight">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- NEW SERVICES SECTION -->
+        <section id="services" class="section">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>App Solutions</h3>
+                    <p>Custom application development services tailored to your business needs. We build robust, scalable solutions that drive efficiency and innovation for your organization.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Network Solutions</h3>
+                    <p>Strategic lead generation and network development services. We create pathways to connect you with valuable partners, clients, and opportunities in your industry.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Talent Solutions</h3>
+                    <p>Comprehensive staffing and resource management services. We identify, recruit, and place top-tier talent to help you build high-performing teams that drive success.</p>
+                    <a href="#contact" class="service-btn">Learn More</a>
+                </div>
             </div>
         </section>
 
@@ -383,6 +501,17 @@
             section.style.transform = 'translateY(20px)';
             section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
             observer.observe(section);
+        });
+        
+        // Service card hover effect enhancement
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('.service-icon').style.transform = 'scale(1.1)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.service-icon').style.transform = 'scale(1)';
+            });
         });
     </script>
 </body>
