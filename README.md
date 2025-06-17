@@ -1,2 +1,1 @@
-# sevendyne_website
-# sevendyne_website
+# sevendyne official website
