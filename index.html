@@ -291,8 +291,8 @@
             background: linear-gradient(to bottom, #00247D 0%, #00247D 33%, #CF142B 33%, #CF142B 66%, #FFFFFF 66%, #FFFFFF 100%);
         }
         
-        .client-flag.sg {
-            background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #CE1126 50%, #CE1126 100%);
+        .client-flag.my {
+            background: linear-gradient(to bottom, #006A4E 0%, #006A4E 50%, #D80027 50%, #D80027 100%);
         }
         
         .client-flag.de {
@@ -344,6 +344,23 @@
             color: #2a5298;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            background: #e0e9ff;
+            color: #1a2a6c;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
         
         @media (max-width: 768px) {
@@ -436,7 +453,7 @@
             </div>
         </section>
 
-        <!-- NEW CLIENT WORKS SECTION -->
+        <!-- UPDATED CLIENT WORKS SECTION -->
         <section id="clients" class="section">
             <div class="section-title">
                 <h2>Client Works</h2>
@@ -444,18 +461,52 @@
             <div class="clients-container">
                 <!-- UK Client Card -->
                 <div class="client-card">
-                    <div class="client-flag sg"></div>
+                    <div class="client-flag uk"></div>
                     <h3>United Kingdom</h3>
-                    <div class="client-tech">PHP Development</div>
-                    <p>Provided specialized PHP developers to a leading fintech company in Singapore, enhancing their payment & CRM apps.</p>
+                    <div class="client-tech">SaaS Payroll Solutions</div>
+                    <p>Building and managing specialized payroll solutions for engineering teams working with Solidworks and SCADA systems.</p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">Solidworks</span>
+                        <span class="tech-tag">SCADA</span>
+                        <span class="tech-tag">Payroll Management</span>
+                        <span class="tech-tag">SaaS</span>
+                    </div>
+                    
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Developers</div>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Engineers</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">2+y</div>
+                            <div class="stat-number">3+ yrs</div>
                             <div class="stat-label">Duration</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Malaysia Client Card -->
+                <div class="client-card">
+                    <div class="client-flag my"></div>
+                    <h3>Malaysia</h3>
+                    <div class="client-tech">Skilled Training Programs</div>
+                    <p>Providing comprehensive training on Fullstack Web, Java, and .NET programming for students and interns in India.</p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">Fullstack Web</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">Internships</span>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Placement</div>
                         </div>
                     </div>
                 </div>
@@ -464,34 +515,24 @@
                 <div class="client-card">
                     <div class="client-flag de"></div>
                     <h3>Germany</h3>
-                    <div class="client-tech">Fullstack Node.js</div>
-                    <p>Staffed a complete development team for German based tech startups, delivering a scalable IoT platform in record time.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">Engineers</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3+y</div>
-                            <div class="stat-label">Duration</div>
-                        </div>
+                    <div class="client-tech">IT Staffing Solutions</div>
+                    <p>Staffing specialized resources including Fullstack Web developers, C++ experts, and other technical roles.</p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">Fullstack Web</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Cloud</span>
+                        <span class="tech-tag">DevOps</span>
                     </div>
-                </div>
-                
-                <!-- Singapore Client Card -->
-                <div class="client-card">
-                    <div class="client-flag uk"></div>
-                    <h3>Singapore</h3>
-                    <div class="client-tech">Engineering</div>
-                    <p>Deployed specialized SCADA and Solidworks engineers to support a major industrial automation project for a government initiative.</p>
+                    
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number">5+y</div>
-                            <div class="stat-label">Duration</div>
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Experts</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">4.9/5</div>
-                            <div class="stat-label">Satisfaction</div>
+                            <div class="stat-number">2+ yrs</div>
+                            <div class="stat-label">Duration</div>
                         </div>
                     </div>
                 </div>
