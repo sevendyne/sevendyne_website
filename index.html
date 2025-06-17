@@ -245,12 +245,12 @@
             transform: translateY(-5px);
         }
         
-        /* NEW SERVICES SECTION */
-        #services {
+        /* CLIENT WORKS SECTION */
+        #clients {
             padding: 80px 0;
         }
         
-        .services-container {
+        .clients-container {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -259,7 +259,7 @@
             margin: 0 auto;
         }
         
-        .service-card {
+        .client-card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -268,53 +268,82 @@
             flex: 1;
             min-width: 280px;
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         
-        .service-card:hover {
+        .client-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
-        .service-icon {
-            width: 90px;
-            height: 90px;
-            background: linear-gradient(135deg, #1a2a6c 0%, #2a5298 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .client-flag {
+            width: 80px;
+            height: 50px;
             margin: 0 auto 25px;
-            font-size: 2.5rem;
-            color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
         }
         
-        .service-card h3 {
+        .client-flag.uk {
+            background: linear-gradient(to bottom, #00247D 0%, #00247D 33%, #CF142B 33%, #CF142B 66%, #FFFFFF 66%, #FFFFFF 100%);
+        }
+        
+        .client-flag.sg {
+            background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #CE1126 50%, #CE1126 100%);
+        }
+        
+        .client-flag.de {
+            background: linear-gradient(to bottom, #000000 0%, #000000 33%, #DD0000 33%, #DD0000 66%, #FFCE00 66%, #FFCE00 100%);
+        }
+        
+        .client-card h3 {
             color: #1a2a6c;
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
-        .service-card p {
-            color: #333;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 25px;
-        }
-        
-        .service-btn {
+        .client-tech {
             display: inline-block;
             background: linear-gradient(to right, #1a2a6c, #2a5298);
             color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
+            padding: 8px 20px;
+            border-radius: 20px;
             font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s;
+            margin: 10px 0;
+            font-size: 1.1rem;
         }
         
-        .service-btn:hover {
-            background: linear-gradient(to right, #2a5298, #4a6fa5);
-            box-shadow: 0 5px 15px rgba(26, 42, 108, 0.3);
+        .client-card p {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 20px 0;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #1a2a6c;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #2a5298;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         @media (max-width: 768px) {
@@ -352,12 +381,12 @@
                 padding: 15px 25px;
             }
             
-            .services-container {
+            .clients-container {
                 flex-direction: column;
                 align-items: center;
             }
             
-            .service-card {
+            .client-card {
                 width: 100%;
                 max-width: 450px;
             }
@@ -373,7 +402,7 @@
                     <h1>Sevendyne <span>Consultancy Services LLP</span></h1>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#clients">Client Works</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -404,6 +433,68 @@
                 <p>With a foundation built on integrity, innovation, and client satisfaction, we continue to evolve and adapt to the changing technology landscape while maintaining the highest standards of service.</p>
                 
                 <div class="highlight">Established 2012</div>
+            </div>
+        </section>
+
+        <!-- NEW CLIENT WORKS SECTION -->
+        <section id="clients" class="section">
+            <div class="section-title">
+                <h2>Client Works</h2>
+            </div>
+            <div class="clients-container">
+                <!-- UK Client Card -->
+                <div class="client-card">
+                    <div class="client-flag uk"></div>
+                    <h3>United Kingdom</h3>
+                    <div class="client-tech">C++ Development</div>
+                    <p>Provided specialized C++ developers to a leading fintech company in London, enhancing their algorithmic trading platform performance by 37%.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Developers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2.5y</div>
+                            <div class="stat-label">Duration</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Germany Client Card -->
+                <div class="client-card">
+                    <div class="client-flag de"></div>
+                    <h3>Germany</h3>
+                    <div class="client-tech">Fullstack Node.js</div>
+                    <p>Staffed a complete development team for a Munich-based automotive tech startup, delivering a scalable IoT platform in record time.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Engineers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Retention</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Singapore Client Card -->
+                <div class="client-card">
+                    <div class="client-flag sg"></div>
+                    <h3>Singapore</h3>
+                    <div class="client-tech">Java & Solidworks</div>
+                    <p>Deployed specialized Java developers and Solidworks engineers to support a major industrial automation project for a government initiative.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">23</div>
+                            <div class="stat-label">Experts</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9/5</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -468,14 +559,14 @@
             observer.observe(section);
         });
         
-        // Service card hover effect enhancement
-        document.querySelectorAll('.service-card').forEach(card => {
+        // Client card hover effect enhancement
+        document.querySelectorAll('.client-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
-                card.querySelector('.service-icon').style.transform = 'scale(1.1)';
+                card.querySelector('.client-flag').style.transform = 'scale(1.1)';
             });
             
             card.addEventListener('mouseleave', () => {
-                card.querySelector('.service-icon').style.transform = 'scale(1)';
+                card.querySelector('.client-flag').style.transform = 'scale(1)';
             });
         });
     </script>
