@@ -46,12 +46,6 @@ header {
     gap: 15px;
 }
 
-.company-brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .logo {
     width: 50px;
     height: 50px;
@@ -64,19 +58,6 @@ header {
     color: var(--primary);
     font-size: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.company-name h1 {
-    font-size: 22px;
-    margin: 0;
-    color: white;
-}
-
-.company-name p {
-    font-size: 14px;
-    opacity: 0.9;
-    margin-top: 3px;
-    color: #e0e9ff;
 }
 
 .contact-info {
@@ -488,4 +469,5 @@ footer {
     font-size: 14px;
     color: #e0e9ff;
     margin: 0;
+    opacity: 0.9;
 }
