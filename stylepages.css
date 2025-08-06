@@ -9,6 +9,84 @@
     --gray: #6c757d;
 }
 
+/* Privacy Policy and Terms & Conditions Page Styles */
+.page-content {
+    padding: 40px 20px;
+    background: white;
+}
+
+.page-content .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-content .section-title h1 {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.page-content .section-title p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    margin: 30px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.content-section h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--dark);
+}
+
+.content-section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.content-section .contact-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary);
+}
+
+.content-section .contact-info p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-section .contact-info i {
+    color: var(--primary);
+    width: 20px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,6 +124,12 @@ header {
     gap: 15px;
 }
 
+.company-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -58,6 +142,19 @@ header {
     color: var(--primary);
     font-size: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.company-name h1 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+}
+
+.company-name p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 3px;
+    color: #e0e9ff;
 }
 
 .contact-info {
@@ -445,29 +542,4 @@ footer {
     .footer-links a {
         justify-content: center;
     }
-}
-.company-brand {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-img {
-    height: 60px;
-    width: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.company-name h1 {
-    font-size: 22px;
-    margin: 0;
-    color: white;
-}
-
-.company-name p {
-    font-size: 14px;
-    color: #e0e9ff;
-    margin: 0;
-    opacity: 0.9;
 }
